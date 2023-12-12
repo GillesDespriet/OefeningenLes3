@@ -8,7 +8,7 @@ if response.getcode() == 200:
     data = json.loads(response.read())
     episodes = data["results"]
     for episode in episodes:
-        print("Aflevering:", episode["episode"], " - Naam:", episode["name"], " - Uitzendingsdatum", episode["air_date"])
+        print("Aflevering:", episode["episode"], " - Naam:", episode["name"], " - Uitzendingsdatum:", episode["air_date"])
 
 character = input("Geef een Rick & Morty personage op: ")
 url = "https://rickandmortyapi.com/api/character/?name=" + character
