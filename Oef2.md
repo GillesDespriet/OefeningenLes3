@@ -1,0 +1,1 @@
+curl https://dog.ceo/api/breeds/image/random | python -m json.tool
