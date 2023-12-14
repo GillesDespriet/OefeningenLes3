@@ -13,9 +13,8 @@ webbrowser.open(url)
 
 i = 0
 while i < 5:
-    response = urllib.request.urlopen("https://dog.ceo/api/breed/puggle/images/random/5")
-    if response.getcode() == 200:
-        output = json.loads(response.read())
-        url = output['message'][i]
-        webbrowser.open(url)
-        i += 1
+    response = urllib.request.urlopen("https://dog.ceo/api/breed/puggle/images/random/5")    
+    output = json.loads(response.read())
+    url = output['message'][i]
+    webbrowser.open(url)
+    i += 1
